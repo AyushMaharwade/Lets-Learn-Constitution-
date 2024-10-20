@@ -6,14 +6,14 @@ const Navbar = () => {
       <nav className="px-4 py-3 lg:px-6 lg:py-0 lg:h-[9vh] bg-[#FB8500]">
         <div className="flex flex-wrap lg:justify-between
         items-center mx-auto max-w-screen-xl font-Inter justify-center gap-3 lg:h-[9vh]">
-          <a href="#" className="flex items-center">
+          <div href="#" className="flex items-center">
             {/* <img className="" src="client/src/assets/png-clipart-three-headed-lion-lion-capital-of-ashoka-sarnath-museum-state-emblem-of-india-national-symbols-of-india-planet-miscellaneous-mammal 1.png" /> */}
 
             <Link to='/'><span className="self-center flex justify-center items-center
                 whitespace-nowrap font-sans font-medium text-3xl text-white">
               Constitution of India</span>
             </Link>
-          </a>
+          </div>
 
           <div>
             <ul className="md:flex justify-between align-items lg:w-[30vw] md:w-[30vw] sm:w-[90vw] gap-[5px] text-white font-regular hidden">
