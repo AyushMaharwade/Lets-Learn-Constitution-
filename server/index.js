@@ -5,9 +5,10 @@ const mongoose = require('mongoose')
 const app = express();
 const port = 3000;
 
-mongoose.connect(process.env.MONGO_URL)
-.then(() => console.log('database connected'))
-.catch(() => console.log('databse not connected', err))
+mongoose.connect(process.env.MONGO_URL,{
+      connectTimeoutMS: 10000,
+}).then(() => console.log('database connected'))
+.catch(() => console.log('database not connected',err))
 
 // middelware
 app.use(express.json())
