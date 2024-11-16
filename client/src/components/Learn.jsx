@@ -1,7 +1,7 @@
 
 const Learn = () => {
   return (
-    <div>Learn</div>
+    <div>Lsfsfjasojfn</div>
   )
 }
 
