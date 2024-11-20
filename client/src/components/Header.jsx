@@ -2,7 +2,7 @@
 const Header = () => {
   return (
         <div>
-            <img src="client/src/assets/SC Ends Immunity For Legislators Taking Bribes 1.png" className="md:h-[60vh] md:w-[100vw] h-[40vh] absolute z-[-1]"></img>
+            <img src="/SC Ends Immunity For Legislators Taking Bribes 1.png" className="object-fit absolute -z-20 w-full h-[60vh]"/>
             <div className="md:h-[60vh] md:w-[100vw] h-[40vh] absolute z-[-1]  bg-gradient-to-t from-black to-transparent "></div>
             <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center align- z-10">
                 <h1 className="md:text-5xl text-3xl font-medium text-white text-center font-sans underline">Sansthaein Aur Samvidhan Institutions & Constitution</h1>
