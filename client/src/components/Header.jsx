@@ -10,9 +10,9 @@ const Header = () => {
             </div>
             <div className="h-[30vh] w-auto flex justify-center items-center">
 
-                <div className="h-[30vh] w-[50vw] bg-gradient-to-r from-[#FB8500] to-[#FB8500] text-white p-4">
+                <div className="h-[30vh] w-[50vw] bg-gradient-to-r from-[#FB8500] to-[#FB8500] text-white p-4 rounded-md">
                     <div className="mb-3 mt-1 text-3xl font-semibold font-sans text-center">About us</div>
-                    <p className="text-left text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio vitae dicta. Eveniet accusantium, doloribus deleniti repellendus explicabo in officia fuga itaque corporis dolore quos soluta laudantium tempora temporibus maxime doloribus deleniti repellendus explicabo in officia fuga itaque corporis dolore quos soluta laudantium tempora temporibus maxime .</p>
+                    <p className="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio vitae dicta. Eveniet accusantium, doloribus deleniti repellendus explicabo in officia fuga itaque corporis dolore quos soluta laudantium tempora temporibus maxime doloribus deleniti repellendus explicabo in officia fuga itaque corporis dolore quos soluta laudantium tempora temporibus maxime .</p>
                 </div>
 
             </div>
@@ -32,7 +32,7 @@ const Header = () => {
                     />
                 </div>
                 {/* Bottom Section */}
-                <div className="bg-orange-600 text-white text-center py-4">
+                <div className="bg-orange-600 text-white text-center">
                     <p className="text-md md:text-lg italic">
                         “Constitutional morality is not a natural sentiment. It has to be
                         cultivated. - DR. B.R. AMBEDKAR”
