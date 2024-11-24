@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="flex flex-wrap lg:justify-between
         items-center mx-auto max-w-screen-xl font-Inter justify-center gap-3 lg:h-[9vh]">
           <div href="#" className="flex items-center">
-            <img className="h-10 m-2" src="/png-clipart-three-headed-lion-lion-capital-of-ashoka-sarnath-museum-state-emblem-of-india-national-symbols-of-india-planet-miscellaneous-mammal 1.png" />
+            <img className="h-12 m-2 px-3" src="/logo.png" />
 
             <Link to='/'><span className="self-center flex justify-center items-center
                 whitespace-nowrap font-sans font-medium text-3xl text-white">
