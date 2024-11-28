@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
 
 const Learn = () => {
   return (
-    <div className="pt-20 flex items-center justify-center ">
+    <a id="learn">
+    <div className=" flex items-center justify-center ">
       <div className="w-[60%] h-[60vh] bg-blue-900 flex flex-col items-center justify-center rounded-md  ">
         <h1 className="text-white text-2xl ">Learn</h1>
         <p className="text-white mb-8">
@@ -10,18 +12,19 @@ const Learn = () => {
 
         <div className="flex space-x-20">
           <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md ">
-            <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
+            <Link to='/Executive'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
           </div>
           <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-            <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
+          <Link to='/Judiciciary'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
           </div>
           <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-            <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
+          <Link to='/Legislative'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
           </div>
         </div>
 
       </div>
     </div>
+    </a>
   )
 }
 
