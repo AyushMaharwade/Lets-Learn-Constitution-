@@ -1,6 +1,7 @@
 
 const Games = () => {
   return (
+    <a id="games">
     <div className="pt-20 pb-5 flex items-center justify-center ">
     <div className="w-[60%] h-[60vh] bg-blue-900 flex flex-col items-center justify-center rounded-md  ">
       <h1 className="text-white text-2xl ">Games</h1>
@@ -22,6 +23,7 @@ const Games = () => {
 
     </div>
   </div>
+  </a>
   )
 }
 

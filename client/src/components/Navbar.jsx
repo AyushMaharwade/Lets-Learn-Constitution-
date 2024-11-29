@@ -18,9 +18,9 @@ const Navbar = () => {
           <div>
             <ul className="md:flex justify-between align-items lg:w-[30vw] md:w-[30vw] sm:w-[90vw] gap-[5px] text-white font-regular hidden">
               <Link to='/'><li className="cursor-pointer">Home</li></Link>
-              <li className="cursor-pointer">Learn</li>
-              <li className="cursor-pointer">Games</li>
-              <li className="cursor-pointer">Langauge</li>
+              <a href="#learn"><li className="cursor-pointer">Learn</li></a>
+              <a href="#games"><li className="cursor-pointer">Games</li></a>
+              <Link to='/News'><li className="cursor-pointer">News</li></Link>
             </ul>
           </div>
 
