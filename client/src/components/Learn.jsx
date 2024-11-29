@@ -12,10 +12,10 @@ const Learn = () => {
 
         <div className="flex space-x-20">
           <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md ">
-            <Link to='/Executive'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
+            <Link to='/Excecutive'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
           </div>
           <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-          <Link to='/Judiciciary'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
+          <Link to='/Judiciary'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
           </div>
           <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
           <Link to='/Legislative'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>

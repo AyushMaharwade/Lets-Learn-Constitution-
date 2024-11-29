@@ -1,4 +1,4 @@
-import Footer from "../components/Footer"
+
 import Games from "../components/Games"
 import Header from "../components/Header"
 import Learn from "../components/Learn"
@@ -11,7 +11,6 @@ const Home = () => {
     <Learn />
     <Games />
     <Pillars />
-    <Footer />
     </>
   )
 }

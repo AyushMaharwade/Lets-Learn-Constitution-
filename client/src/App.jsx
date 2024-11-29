@@ -7,12 +7,13 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Excecutive from './pages/Excecutive'
 import Legislative from './pages/Legislative'
-import Judiciciary from './pages/Judiciciary'
+import Judiciciary from './pages/Judiciary'
 import Quizgame from './pages/Quizgame'
 import Snakegame from './pages/Snakegame'
 import Flipcardgame from './pages/Flipcardgame'
 import axios from 'axios';
 import {Toaster} from 'react-hot-toast'
+import Footer from './components/Footer'
 
 axios.defaults.baseURL = 'http://localhost:3000';
 axios.defaults.withCredentials = true;
@@ -44,6 +45,7 @@ function App() {
 
       <Route path='flip-card-game' element={<Flipcardgame />} />
     </Routes>
+    <Footer/>
     </>
   )
 }

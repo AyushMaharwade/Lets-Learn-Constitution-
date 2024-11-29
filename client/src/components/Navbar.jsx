@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
   return (
     <nav>
-      <nav className="px-4 py-3 lg:px-7 lg:py-0 lg:h-[9vh] bg-[#FB8500]">
+      <nav className="fixed top-0 left-0 w-full px-4 py-3 lg:px-7 lg:py-0 lg:h-[9vh] bg-[#F28D3F] z-50">
         <div className="flex flex-wrap lg:justify-between
         items-center mx-auto max-w-screen-xl font-Inter justify-center gap-3 lg:h-[9vh]">
           <div href="#" className="flex items-center">
@@ -26,11 +26,11 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3 lg:order-2 w-[320px]">
             <Link to='/login'><button className="text-white bg-[#000C73] hover:bg-[#3e75c8]
-                dark:text-white focus:bg-[#FB5607] 
+                dark:text-white focus:bg-[#F28D3F] 
                 rounded-[12px] text-md text-center lg:px-5 py-2 lg:py-2 mr-2 focus:outline-none font-Inter px-4 font-medium" >Login</button>
             </Link>
             <Link to='/register'><button className="text-white bg-[#000C73] hover:bg-[#3e75c8]
-                dark:text-white focus:bg-[#FB5607] 
+                dark:text-white focus:bg-[#F28D3F] 
                 rounded-[12px] text-md text-center lg:px-5 py-2 lg:py-2 mr-2 focus:outline-none font-Inter px-4 font-medium" >Sign up</button>
             </Link>
           </div>

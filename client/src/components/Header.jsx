@@ -1,8 +1,8 @@
 
 const Header = () => {
     return (
-        <div className="mb-20">
-            <img src="/SC Ends Immunity For Legislators Taking Bribes 1.png" className="object-fit absolute -z-20 w-full h-[60vh]"/>
+        <div className="mb-20 mt-[9vh]">
+            <img src="/Header.jpg" className="object-fit absolute -z-20 w-full h-[60vh]"/>
             <div className="md:h-[60vh] h-[40vh] w-full absolute z-[-1]  bg-gradient-to-t from-black to-transparent "></div>
             <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center align- z-10">
                 <h1 className="md:text-5xl text-3xl font-medium text-white text-center font-sans underline">Sansthaein Aur Samvidhan Institutions & Constitution</h1>
