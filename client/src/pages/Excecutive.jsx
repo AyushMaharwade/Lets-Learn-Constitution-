@@ -1,5 +1,8 @@
-
+import React, { useEffect } from 'react';
 const Executive = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gray-50 p-8 font-sans">
       {/* Header Section */}
