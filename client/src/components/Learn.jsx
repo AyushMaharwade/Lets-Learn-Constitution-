@@ -11,8 +11,7 @@ const Learn = () => {
         <div className="flex space-x-20">
         
         
-        <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
+        <div className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/Legislature.jpeg"
