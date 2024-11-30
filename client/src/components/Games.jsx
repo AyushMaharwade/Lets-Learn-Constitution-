@@ -11,14 +11,16 @@ const Games = () => {
       </p>
 
       <div className="flex space-x-20">
-        <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md ">
-          <Link to="/QuizGame"><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
+        <div className="bg-gray-300 w-40 h-60 flex-col items-center justify-center p-4  rounded-md ">
+          <img src="/Quiz-game.png" className="rounded-lg"/>
+          <p className="text-center font-semibold">Quiz Game</p>
+          <Link to="/QuizGame"><button className="bg-orange-500 text-white py-2 px-4 rounded-md items-center mx-8 my-3">Play</button></Link>
         </div>
         <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-          <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
+          <Link to="/Snakegame"><button className="bg-orange-500 text-white py-2 px-4 rounded">Play</button></Link>
         </div>
         <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-          <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
+          <button className="bg-orange-500 text-white py-2 px-4 rounded">Play</button>
         </div>
       </div>
 
