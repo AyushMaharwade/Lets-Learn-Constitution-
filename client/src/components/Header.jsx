@@ -45,18 +45,12 @@ const Header = () => {
                 <img src="/image.png" className="h-[40vh] w-full object-fit" />
                 {/* Bottom Section */}
                 <div className="flex h-[20vh] w-full justify-center items-center">
-<<<<<<< HEAD
                 <a id="learn"></a>
                 <div className="h-[20vh] w-[80vw] flex justify-center items-center bg-orange-500 rounded-xl z-10 text-center text-white text-xl absolute">
                     <p>“Constitutional morality is not a natural sentiment. It has to be cultivated”</p>
                     <p>-B.R. Ambedkar</p>
                 </div>
-=======
-                    <a id="learn"></a>
-                    <div className="h-[20vh] w-[80vw] flex justify-center items-center bg-orange-500 rounded-xl z-10 text-center text-white text-xl absolute">
-                        <p>“Constitutional morality is not a natural sentiment. It has to be cultivated”</p>
-                    </div>
->>>>>>> b77584c4dedc211a6b742d421630833e6cbef03e
+
                 </div>
             </div>
         </div>
