@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom"
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   return (
     <nav>
       <nav className=" top-0 left-0 w-full px-4 py-3 lg:px-7 lg:py-0 lg:h-[9vh] bg-[#F28D3F] z-50">
@@ -24,7 +30,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex items-center gap-3 lg:order-2 w-[320px]">
+          {/* <div className="flex items-center gap-3 lg:order-2 w-[320px]">
             <Link to='/login'><button className="text-white bg-[#000C73] hover:bg-[#3e75c8]
                 dark:text-white focus:bg-[#F28D3F] 
                 rounded-[12px] text-md text-center lg:px-5 py-2 lg:py-2 mr-2 focus:outline-none font-Inter px-4 font-medium" >Login</button>
@@ -33,12 +39,54 @@ const Navbar = () => {
                 dark:text-white focus:bg-[#F28D3F] 
                 rounded-[12px] text-md text-center lg:px-5 py-2 lg:py-2 mr-2 focus:outline-none font-Inter px-4 font-medium" >Sign up</button>
             </Link>
+          </div> */}
+
+          {/* Profile Dropdown */}
+          <div className="relative">
+            <button
+              className="flex items-center text-white focus:outline-none"
+              onClick={toggleDropdown}
+            >
+              <img
+                src="/user.png"
+                alt="Profile"
+                className="w-8 h-8 rounded-full filter invert"
+                style={{ filter: "invert(100%) grayscale(100%) brightness(200%)" }}
+              />
+              
+            </button>
+
+            {isDropdownOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+                <a
+                  href="/profile"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
+                >
+                  My Profile
+                </a>
+                <a
+                  href="/login"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Login
+                </a>
+                <a
+                  href="/register"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Sign Up
+                </a>
+                <a
+                  href="/"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md"
+                >
+                  Logout
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </nav>
-
-
-
     </nav>
   )
 }

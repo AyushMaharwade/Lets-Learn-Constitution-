@@ -5,7 +5,7 @@ const Footer = () => {
       {/* Left Section - Emblem */}
       <div className="mb-4 sm:mb-0">
         <img
-          src="/png-clipart-three-headed-lion-lion-capital-of-ashoka-sarnath-museum-state-emblem-of-india-national-symbols-of-india-planet-miscellaneous-mammal 1.png"
+          src="/logo.png"
           alt="Emblem of India"
           className="h-16 w-auto"
         />
