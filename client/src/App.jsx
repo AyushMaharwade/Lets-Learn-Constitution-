@@ -9,7 +9,7 @@ import Dashboard from './pages/Dashboard'
 import Excecutive from './pages/Excecutive'
 import Legislative from './pages/Legislative'
 import Judiciciary from './pages/Judiciary'
-import Quizgame from './pages/Quizgame'
+import QuizGame from './pages/Quizgame'
 import Snakegame from './pages/Snakegame'
 import Flipcardgame from './pages/Flipcardgame'
 import Profile from './pages/Profile'
@@ -44,7 +44,7 @@ function App() {
 
       <Route path="/News" element={<News />} />
 
-      <Route path='quiz-game' element={<Quizgame />} />
+      <Route path="/Quizgame" element={<QuizGame />} />
 
       <Route path='Snake-game' element={<Snakegame />} />
 
