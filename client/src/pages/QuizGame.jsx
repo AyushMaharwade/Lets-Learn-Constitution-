@@ -1,6 +1,9 @@
-
+import { useEffect } from 'react';
 
 const Quizgame = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div><iframe
     src="https://quiz-game-eta-seven.vercel.app/" // Replace with the deployed URL
