@@ -2,19 +2,26 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
     const [animate, setAnimate] = useState(false);
+    const [fadeIn, setFadeIn] = useState(false);
 
     useEffect(() => {
-        // Trigger the animation after the component loads
+        // Trigger the animations after the component loads
         setAnimate(true);
+        const timer = setTimeout(() => {
+            setFadeIn(true);
+        }, 500); // Delay fade-in of <p> tag
+
+        return () => clearTimeout(timer);
     }, []);
 
     return (
         <div className="mb-20">
             <img src="/Header.jpg" className="object-fit absolute -z-20 w-full h-[60vh]" />
             <div className="md:h-[60vh] h-[40vh] w-full absolute z-[-1] bg-gradient-to-t from-black to-transparent"></div>
-            <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center align- z-10">
+            <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center z-10">
+                {/* Animated Title */}
                 <h1
-                    className={`md:text-5xl text-3xl font-medium text-white text-center font-sans  ${
+                    className={`md:text-5xl text-3xl font-medium text-white text-center font-sans ${
                         animate ? "opacity-100 scale-100" : "opacity-0 scale-125"
                     }`}
                     style={{
@@ -24,7 +31,16 @@ const Header = () => {
                 >
                     Sansthaein Aur Samvidhan Institutions & Constitution
                 </h1>
-                <p className="md:w-[70vw] text-white font-medium md:inline hidden text-center">
+
+                {/* Animated <p> Tag */}
+                <p
+                    className={`md:w-[70vw] text-white font-medium md:inline hidden text-center ${
+                        fadeIn ? "opacity-100" : "opacity-0"
+                    }`}
+                    style={{
+                        transition: "opacity 1.5s ease-in",
+                    }}
+                >
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eos suscipit repudiandae quis reiciendis distinctio laborum aliquam. Cumque possimus, ratione ipsam voluptas laudantium, maiores odio corporis, hic ullam vitae quae reiciendis animi. Corporis sunt aliquid quaerat facere dolores voluptatem amet facilis! Voluptas voluptatibus incidunt, reprehenderit illo distinctio accusantium tempora corrupti?
                 </p>
             </div>
@@ -56,6 +72,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 // const Header = () => {
 //     return (
