@@ -3,6 +3,7 @@ import { Route,Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Register from './pages/Register'
+import News from './pages/News'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Excecutive from './pages/Excecutive'
@@ -38,6 +39,8 @@ function App() {
       <Route path='legislative' element={<Legislative />} />
 
       <Route path='Judiciary' element={<Judiciciary />} />
+
+      <Route path="/News" element={<News />} />
 
       <Route path='quiz-game' element={<Quizgame />} />
 
