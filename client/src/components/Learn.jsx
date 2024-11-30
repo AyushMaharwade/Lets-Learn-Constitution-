@@ -12,7 +12,7 @@ const Learn = () => {
         
         
         <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/Legislature.jpeg"
@@ -27,15 +27,14 @@ const Learn = () => {
               </Link>
             </div>
 
-
-
             <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
-              {/* Background Image */}
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
+              {/* Background Image */}        
               <img
                 src="/Executive.jpg"
                 alt="Background"
                 className="absolute inset-0 w-full h-full object-cover"
+                
               />
               {/* Button */}
               <Link to="/Excecutive">
@@ -45,10 +44,8 @@ const Learn = () => {
               </Link>
             </div>
 
-
-
             <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/Judiciary.jpg"

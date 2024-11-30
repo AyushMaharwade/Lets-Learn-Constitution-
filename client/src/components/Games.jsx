@@ -14,7 +14,7 @@ const Games = () => {
 
 
             <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/Quiz.jpeg"
@@ -31,7 +31,7 @@ const Games = () => {
 
 
             <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/SnL.jpg"
@@ -48,7 +48,7 @@ const Games = () => {
 
 
             <div
-              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/SW.jpeg"
