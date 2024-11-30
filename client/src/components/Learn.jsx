@@ -9,15 +9,59 @@ const Learn = () => {
           Play our unique games to learn as well as test your knowledge about the constitution of India.
         </p>
         <div className="flex space-x-20">
-        <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-          <Link to='/Legislative'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
-          </div>
-          <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md ">
-          <Link to='/Excecutive'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
-          </div>
-          <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
-          <Link to='/Judiciary'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
-          </div>
+        
+        
+        <div
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              {/* Background Image */}
+              <img
+                src="/Legislature.jpeg"
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              {/* Button */}
+              <Link to="/Legislative">
+                <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
+                  Read
+                </button>
+              </Link>
+            </div>
+
+
+
+            <div
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              {/* Background Image */}
+              <img
+                src="/Executive.jpg"
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              {/* Button */}
+              <Link to="/Excecutive">
+                <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
+                  Read
+                </button>
+              </Link>
+            </div>
+
+
+
+            <div
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden relative">
+              {/* Background Image */}
+              <img
+                src="/Judiciary.jpg"
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              {/* Button */}
+              <Link to="/Judiciary">
+                <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
+                  Read
+                </button>
+              </Link>
+            </div>
         </div>
 
       </div>
