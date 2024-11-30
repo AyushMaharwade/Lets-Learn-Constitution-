@@ -37,15 +37,13 @@ const Learn = () => {
         Unlock the knowledge of India's Constitution with engaging lessons and resources tailored for all
         </p>
         <div className="flex space-x-20">
-<<<<<<< HEAD
-        
-        
+          
         <div className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
               {/* Background Image */}
               <img
                 src="/Legislature.jpeg"
                 alt="Background"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-all duration-500 cursor-pointer"
               />
               {/* Button */}
               <Link to="/Legislative">
@@ -54,36 +52,15 @@ const Learn = () => {
                 </button>
               </Link>
             </div>
-=======
-          {/* Left Div */}
-          <div
-            className={`w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative transform transition-transform duration-700 ${
-              animate ? "translate-x-10 opacity-100" : "-translate-x-20 opacity-0"
-            }`}
-          >
-            <img
-              src="/Legislature.jpeg"
-              alt="Background"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <Link to="/Legislative">
-              <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
-                Read
-              </button>
-            </Link>
-          </div>
->>>>>>> 134bc1666170823a779a9a6fcf4e740167682c6b
 
           {/* Middle Div */}
           <div
-            className={`w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative transform transition-transform duration-700 ${
-              animate ? "scale-110 opacity-100" : "scale-90 opacity-0"
-            }`}
+            className= "w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative"
           >
             <img
               src="/Executive.jpg"
               alt="Background"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-all duration-500 cursor-pointer"
             />
             <Link to="/Excecutive">
               <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
@@ -94,14 +71,12 @@ const Learn = () => {
 
           {/* Right Div */}
           <div
-            className={`w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative transform transition-transform duration-700 ${
-              animate ? "-translate-x-10 opacity-100" : "translate-x-20 opacity-0"
-            }`}
+            className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative transform"
           >
             <img
               src="/Judiciary.jpg"
               alt="Background"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-all duration-500 cursor-pointer"
             />
             <Link to="/Judiciary">
               <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
