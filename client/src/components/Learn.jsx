@@ -6,7 +6,7 @@ const Learn = () => {
       <div className="w-[60%] h-[60vh] bg-blue-900 flex flex-col items-center justify-center rounded-md  ">
         <h1 className="text-white text-2xl ">Learn</h1>
         <p className="text-white mb-8">
-          Play our unique games to learn as well as test your knowledge about the constitution of India.
+        Unlock the knowledge of India's Constitution with engaging lessons and resources tailored for all
         </p>
         <div className="flex space-x-20">
         
