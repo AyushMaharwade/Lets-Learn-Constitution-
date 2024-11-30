@@ -9,7 +9,60 @@ const Games = () => {
           <p className="text-white mb-8">
             Play our unique games to learn as well as test your knowledge about the constitution of India.
           </p>
+          <div className="flex space-x-20">
 
+
+            <div
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
+              {/* Background Image */}
+              <img
+                src="/Quiz.jpeg"
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              {/* Button */}
+              <Link to="/QuizGame">
+                <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
+                  Read
+                </button>
+              </Link>
+            </div>
+
+
+            <div
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
+              {/* Background Image */}
+              <img
+                src="/SnL.jpg"
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              {/* Button */}
+              <Link to="/QuizGame">
+                <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
+                  Read
+                </button>
+              </Link>
+            </div>
+
+
+            <div
+              className="w-40 h-60 flex items-end justify-center p-4 rounded-md overflow-hidden shadow-md relative">
+              {/* Background Image */}
+              <img
+                src="/SW.jpeg"
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              {/* Button */}
+              <Link to="/QuizGame">
+                <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
+                  Read
+                </button>
+              </Link>
+            </div>
+=======
+>>>>>>> 37fbeecb86c02181f221f27486e251846b9adcf4
       <div className="flex space-x-20">
         <div className="bg-gray-300 w-40 h-60 flex-col items-center justify-center p-4  rounded-md ">
           <img src="/Quiz-game.png" className="rounded-lg"/>
@@ -23,6 +76,10 @@ const Games = () => {
           <button className="bg-orange-500 text-white py-2 px-4 rounded">Play</button>
         </div>
       </div>
+<<<<<<< HEAD
+=======
+>>>>>>> 19c7f7231ab08b2a04837ddfb83fd216dea7b7b5
+>>>>>>> 37fbeecb86c02181f221f27486e251846b9adcf4
 
           </div>
         </div>
