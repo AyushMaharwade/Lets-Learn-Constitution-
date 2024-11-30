@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Games = () => {
   return (
@@ -10,7 +11,7 @@ const Games = () => {
       </p>
 
       <div className="flex space-x-20">
-        <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md " > 
+        <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md ">
           <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
         </div>
         <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">

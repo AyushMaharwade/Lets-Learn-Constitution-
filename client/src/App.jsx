@@ -3,12 +3,13 @@ import { Route,Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Register from './pages/Register'
+import News from './pages/News'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Excecutive from './pages/Excecutive'
 import Legislative from './pages/Legislative'
 import Judiciciary from './pages/Judiciary'
-import Quizgame from './pages/Quizgame'
+import QuizGame from './pages/Quizgame'
 import Snakegame from './pages/Snakegame'
 import Flipcardgame from './pages/Flipcardgame'
 import Profile from './pages/Profile'
@@ -41,7 +42,9 @@ function App() {
 
       <Route path='Judiciary' element={<Judiciciary />} />
 
-      <Route path='quiz-game' element={<Quizgame />} />
+      <Route path="/News" element={<News />} />
+
+      <Route path="/Quizgame" element={<QuizGame />} />
 
       <Route path='Snake-game' element={<Snakegame />} />
 

@@ -1,7 +1,7 @@
 
 const Header = () => {
     return (
-        <div className="mb-20 mt-[9vh]">
+        <div className="mb-20">
             <img src="/Header.jpg" className="object-fit absolute -z-20 w-full h-[60vh]"/>
             <div className="md:h-[60vh] h-[40vh] w-full absolute z-[-1]  bg-gradient-to-t from-black to-transparent "></div>
             <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center align- z-10">
@@ -28,6 +28,7 @@ const Header = () => {
                 <img src="/image.png"className="h-[40vh] w-full object-fit"/>
                 {/* Bottom Section */}
                 <div className="flex h-[20vh] w-full justify-center items-center">
+                <a id="learn"></a>
                 <div className="h-[20vh] w-[80vw] flex justify-center items-center bg-orange-500 rounded-xl z-10 text-center text-white text-xl absolute">
                     <p>“Constitutional morality is not a natural sentiment. It has to be cultivated”</p>
                 </div>

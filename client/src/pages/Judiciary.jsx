@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 const Judiciary = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
