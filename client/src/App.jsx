@@ -46,7 +46,7 @@ function App() {
 
       <Route path="/Quizgame" element={<QuizGame />} />
 
-      <Route path='Snake-game' element={<Snakegame />} />
+      <Route path='/Snakegame' element={<Snakegame />} />
 
       <Route path='flip-card-game' element={<Flipcardgame />} />
 

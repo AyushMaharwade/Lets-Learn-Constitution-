@@ -29,36 +29,15 @@ const Learn = () => {
           Play our unique games to learn as well as test your knowledge about the constitution of India.
         </p>
         <div className="flex space-x-20">
-          <motion.div
-            className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md"
-            initial={{ x: -100, opacity: 0 }}
-            animate={animate ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.5 }}
-          >
-            <Link to="/Legislative">
-              <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
-            </Link>
-          </motion.div>
-          <motion.div
-            className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={animate ? { scale: 1, opacity: 1 } : {}}
-            transition={{ duration: 0.5 }}
-          >
-            <Link to="/Excecutive">
-              <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
-            </Link>
-          </motion.div>
-          <motion.div
-            className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md"
-            initial={{ x: 100, opacity: 0 }}
-            animate={animate ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.5 }}
-          >
-            <Link to="/Judiciary">
-              <button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button>
-            </Link>
-          </motion.div>
+        <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
+          <Link to='/Legislative'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
+          </div>
+          <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4  rounded-md ">
+          <Link to='/Excecutive'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
+          </div>
+          <div className="bg-gray-300 w-40 h-60 flex items-end justify-center p-4 rounded-md ">
+          <Link to='/Judiciary'><button className="bg-orange-500 text-white py-2 px-4 rounded">Read</button></Link>
+          </div>
         </div>
       </div>
     </div>
