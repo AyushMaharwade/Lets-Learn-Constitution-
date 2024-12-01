@@ -24,13 +24,13 @@ const Header = () => {
                     Sansthaein Aur Samvidhan Institutions & Constitution
                 </h1>
                 <p className="md:w-[70vw] text-white font-medium md:inline hidden text-center">
-                    Discover the world of India's Constitution and its institutions like never before! Dive into an engaging platform where learning meets fun, designed to educate and inspire people of all ages. Explore interactive content, unravel the principles of democracy, and connect with the values that shape our nation. Join us in making constitutional learning meaningful, enjoyable, and empowering for everyone!
+                    Discover the world of Indias Constitution and its institutions like never before! Dive into an engaging platform where learning meets fun, designed to educate and inspire people of all ages. Explore interactive content, unravel the principles of democracy, and connect with the values that shape our nation. Join us in making constitutional learning meaningful, enjoyable, and empowering for everyone!
                 </p>
             </div>
             <div className="h-[30vh] w-auto flex justify-center items-center">
                 <div className="h-[25vh] w-[50vw] bg-gradient-to-r from-[#FB8500] to-[#FB8500] text-white p-4 rounded-md">
                     <div className="mb-3 text-3xl font-semibold font-sans text-center">About us</div>
-                    <p className="text-sm text-center">
+                    <p className="text-[0.8rem] leading-tight text-center">
                         At Sansthaein Aur Samvidhan, we aim to make learning about the Indian Constitution accessible, engaging, and fun for everyone, regardless of age or background. Our platform combines interactive games, easy-to-understand lessons, and exciting activities to foster a deeper understanding of India’s democratic framework and institutions.
                         <div className="mt-2"><h1>Learn. Play. Empower.</h1></div>
                     </p>
