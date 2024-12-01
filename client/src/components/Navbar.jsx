@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="top-0 left-0 w-full px-4 py-3 lg:px-7 lg:py-0 lg:h-[9vh] bg-[#F28D3F] z-50">
+    <nav className="top-0 left-0 w-full px-4 py-3 lg:px-7 lg:py-0 lg:h-[9vh] bg-[#F28D3F] z-50 fixed">
       <div className="flex flex-wrap lg:justify-between items-center mx-auto max-w-screen-xl font-Inter justify-center gap-3 lg:h-[9vh]">
         {/* Logo Section */}
         <div className="flex items-center">
@@ -92,7 +92,7 @@ const Navbar = () => {
                   href="/"
                   className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
                 >
-                  Logout
+                  Log Out
                 </a>
               </div>
 

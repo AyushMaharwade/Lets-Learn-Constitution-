@@ -31,13 +31,9 @@ const Executive = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Introduction Section */}
         <div className="lg:col-span-2 bg-[#000C73] p-6 rounded shadow">
-          <h3 className="text-3xl font-bold text-black mb-4">Introduction</h3>
+          <h3 className="text-3xl font-bold text-white mb-4">Introduction</h3>
           <p className="text-white">
-            Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf jfjjfjbjcj dcjdbcdjv
-            jvbvbj lorem jjahfd sdfi dfisdf bsdi dsi fkdk bdjbjfbfjfjfj
-            fjbcjcdjbcjdy jvbvbj lorem jjahfd sdfi dfisdf bsdi das ifkkd
-            bdjbjfjf jfbjfjf fjbcjcdjbcjdy jvbvbj lorem jjahfd sdfi dfisdf
-            bsdi dsifkkdbdjbfjfb djf jjfjjfbcjcdjbcjdy jvbvbj.
+            <p className='p-2'>The Executive of India is the branch of the government that carries out and enforces the laws passed by the Legislature. It is made up of the President, the Prime Minister, and the Council of Ministers. The President is the head of the country, while the Prime Minister leads the government and works with other ministers to make sure the country runs smoothly.</p> <p className='p-2'>The Executive is responsible for making decisions on policies, running government services, and making sure that laws are followed. They also work to solve problems, such as improving education, healthcare, and the economy. In simple terms, the Executive ensures that the rules and laws made by the Legislature are put into action.</p> <p className='p-2'>By understanding the role of the Executive, we can see how important it is in helping our country grow and serve the needs of its people.</p>
           </p>
         </div>
 
@@ -59,7 +55,7 @@ const Executive = () => {
             <div>
               <Link to="/Legislative">
                 <button className="text-xl font-bold p-1 text-blue-900">
-                Legislative
+                  Legislative
                 </button>
               </Link>
             </div>

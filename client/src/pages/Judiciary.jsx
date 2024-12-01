@@ -31,13 +31,9 @@ const Judiciary = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Introduction Section */}
         <div className="lg:col-span-2 bg-[#000C73] p-6 rounded shadow">
-          <h3 className="text-3xl font-bold text-black mb-4">Introduction</h3>
+          <h3 className="text-3xl font-bold text-white mb-4">Introduction</h3>
           <p className="text-white">
-            Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf jfjjfjbjcj dcjdbcdjv
-            jvbvbj lorem jjahfd sdfi dfisdf bsdi dsi fkdk bdjbjfbfjfjfj
-            fjbcjcdjbcjdy jvbvbj lorem jjahfd sdfi dfisdf bsdi das ifkkd
-            bdjbjfjf jfbjfjf fjbcjcdjbcjdy jvbvbj lorem jjahfd sdfi dfisdf
-            bsdi dsifkkdbdjbfjfb djf jjfjjfbcjcdjbcjdy jvbvbj.
+            <p className='p-2'>The Judiciary of India is the system of courts that interprets and applies the laws of the country. It plays an important role in ensuring that justice is served and people's rights are protected. The Judiciary is independent, meaning it works on its own without being influenced by the government or anyone else.</p> <p className='p-2'>At the top of the Judiciary is the Supreme Court, followed by High Courts in each state, and lower courts in different regions. The Judiciary helps solve disputes between individuals, organizations, and even the government. It also makes sure that the laws passed by the Legislature and the actions of the Executive are fair and follow the Constitution of India.</p> <p className='p-2'>The Judiciary is important because it helps maintain law and order, ensures justice is done, and protects the rights and freedoms of every citizen. Understanding how the Judiciary works helps us realize how important it is to keep things fair and equal for everyone.</p>
           </p>
         </div>
 
@@ -59,14 +55,14 @@ const Judiciary = () => {
             <div>
               <Link to="/Legislative">
                 <button className="text-xl font-bold p-1 text-blue-900">
-                Legislative
+                  Legislative
                 </button>
               </Link>
             </div>
             <div>
               <Link to="/Excecutive">
                 <button className="text-xl font-bold text-blue-900">
-                Excecutive
+                  Excecutive
                 </button>
               </Link>
             </div>

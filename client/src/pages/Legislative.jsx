@@ -32,13 +32,13 @@ const Legislative = () => {
         {/* Introduction Section */}
         <div className="lg:col-span-2 bg-[#000C73] p-6 rounded shadow">
           <h3 className="text-3xl font-bold text-white mb-4">Introduction</h3>
-          <p className="text-white">
+          <p className="text-white p-2">
             The Legislature of India is an important part of the country's government. It is responsible for making laws that help protect the rights and well-being of all citizens. The Indian Legislature has two parts: the Lok Sabha (House of the People) and the Rajya Sabha (Council of States). </p>
-          <p className="text-white">
+          <p className="text-white p-2">
             The Lok Sabha is made up of members who are directly elected by the people from all over India. The Rajya Sabha is made up of members who are chosen by the states and union territories. Together, these two groups work to create and pass laws that affect everyone. </p>
-          <p className="text-white">
+          <p className="text-white p-2">
             The main job of the Legislature is to make laws, which helps make sure that the government works fairly for all people. It also checks if the government is doing its job properly. Lawmaking involves discussions and debates, where different opinions are shared before making important decisions.</p>
-          <p className="text-white">
+          <p className="text-white p-2">
             Understanding how the Legislature works helps us know how laws are made and how we can be part of making our country better.
           </p>
 
