@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 const Executive = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,8 +16,8 @@ const Executive = () => {
           <h2 className="text-5xl font-bold mt-4 text-gray-900">Executive</h2>
         </div>
 
-       {/* Right Section: Image */}
-       <div className="mt-4 md:mt-0 mr-20">
+        {/* Right Section: Image */}
+        <div className="mt-4 md:mt-0 mr-20">
           <img
             src="/image 1.png" // Path to your image
             alt="Executive Section"
@@ -54,7 +55,22 @@ const Executive = () => {
         <h3 className="text-xl font-bold text-blue-900 mb-4">More to Learn</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Placeholder Section */}
-          <div className="bg-gray-200 h-24 rounded"></div>
+          <div className="bg-gray-200 flex flex-col justify-center items-center h-24 rounded">
+            <div>
+              <Link to="/Legislative">
+                <button className="text-xl font-bold p-1 text-blue-900">
+                Legislative
+                </button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/Judiciary">
+                <button className="text-xl font-bold text-blue-900">
+                  Judiciary
+                </button>
+              </Link>
+            </div>
+          </div>
 
           {/* Article Section */}
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
@@ -68,14 +84,6 @@ const Executive = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <footer className="text-center mt-12 text-sm text-gray-600">
-        <p>
-          copyright © 2024 Constitution of India <br />
-          All Rights Reserved
-        </p>
-      </footer>
     </div>
   );
 };

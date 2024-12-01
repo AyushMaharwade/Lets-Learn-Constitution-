@@ -17,7 +17,6 @@ import axios from 'axios';
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
 
-
 axios.defaults.baseURL = 'http://localhost:3000';
 axios.defaults.withCredentials = true;
 
