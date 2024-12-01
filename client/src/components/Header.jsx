@@ -29,7 +29,7 @@ const Header = () => {
             </div>
             <div className="h-[30vh] w-auto flex justify-center items-center">
                 <div className="h-[25vh] w-[50vw] bg-gradient-to-r from-[#FB8500] to-[#FB8500] text-white p-4 rounded-md">
-                    <div className="mb-3 text-3xl font-semibold font-sans text-center">About us</div>
+                    <div className="mb-3 text-3xl font-semibold font-volkhov text-center">About us</div>
                     <p className="text-[0.8rem] leading-tight text-center">
                         At Sansthaein Aur Samvidhan, we aim to make learning about the Indian Constitution accessible, engaging, and fun for everyone, regardless of age or background. Our platform combines interactive games, easy-to-understand lessons, and exciting activities to foster a deeper understanding of India’s democratic framework and institutions.
                         <div className="mt-2"><h1>Learn. Play. Empower.</h1></div>
@@ -38,11 +38,13 @@ const Header = () => {
             </div>
             <div className="md:h-[60vh] md:w-full h-[40vh] overflow-hidden bg-white">
                 {/* Top Section */}
-                <div className="bg-blue-800 text-white text-center py-4 gap-4" >
-                    <h1 className="text-lg md:text-xl font-semibold">Legislature . Judiciary . Executive</h1>
+                <div className="bg-blue-800 text-white text-center py-4 flex justify-around items-center gap-4" >
+                    <h1 className="text-xl md:text-xl font-volkhov">Legislature</h1>
+                    <h1 className="text-xl md:text-xl font-volkhov">Executive</h1>
+                    <h1 className="text-xl md:text-xl font-volkhov">Judiciary</h1>
                 </div>
                 {/* Middle Section */}
-                <img src="/image.png" className="h-[40vh] w-full object-fit absolute" />
+                <img src="/central_vista3_banner_desktop_1920x1080.jpg" className="h-[40vh] w-full object-cover absolute" />
                 {/* Bottom Section */}
                 <div className="flex h-[20vh] w-full justify-center items-center">
                     <a id="learn"></a>

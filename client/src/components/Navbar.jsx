@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img className="h-12 m-2 px-3" src="/logo.png" alt="Logo" />
           <Link to="/">
-            <span className="self-center flex justify-center items-center whitespace-nowrap font-sans font-medium text-3xl text-white">
+            <span className="self-center flex justify-center items-center whitespace-nowrap font-volkhov font-medium text-3xl text-white">
               Constitution of India
             </span>
           </Link>
@@ -34,21 +34,22 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div>
-          <ul className="hidden md:flex justify-between lg:w-[30vw] gap-[5px] text-white font-regular">
-            <Link to="/">
-              <li className="cursor-pointer">Home</li>
-            </Link>
-            <a href="#learn">
-              <li className="cursor-pointer">Learn</li>
-            </a>
-            <a href="#games">
-              <li className="cursor-pointer">Games</li>
-            </a>
-            <Link to="/News">
-              <li className="cursor-pointer">News</li>
-            </Link>
-          </ul>
-        </div>
+  <ul className="hidden md:flex justify-between lg:w-[30vw] gap-[5px] text-white font-regular">
+    <Link to="/">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">Home</li>
+    </Link>
+    <a href="#learn">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">Learn</li>
+    </a>
+    <a href="#games">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">Games</li>
+    </a>
+    <Link to="/News">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">News</li>
+    </Link>
+  </ul>
+</div>
+
 
         {/* User and Language Dropdown */}
         <div className="relative">
