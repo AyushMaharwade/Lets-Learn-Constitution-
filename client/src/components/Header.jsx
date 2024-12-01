@@ -2,20 +2,40 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
     const [animate, setAnimate] = useState(false);
+    const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
+    const [fade, setFade] = useState(false);
+
+    const quotes = [
+        "Constitutional morality is not a natural sentiment. It has to be cultivated. - B.R. Ambedkar",
+        "The Constitution is not a mere lawyer's document, it is a vehicle of life, and its spirit is always the spirit of age. - B.R. Ambedkar",
+        "Democracy is not merely a form of government. It is primarily a mode of associated living. - B.R. Ambedkar",
+        "Freedom of speech and expression is at the heart of every democracy. - Indian Constitution",
+    ];
 
     useEffect(() => {
-        // Trigger the animation after the component loads
         setAnimate(true);
-    }, []);
+
+        // Set up the interval to update the quote with a fade effect
+        const quoteInterval = setInterval(() => {
+            setFade(true); // Start fading out
+            setTimeout(() => {
+                setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
+                setFade(false); // Start fading in
+            }, 500); // Duration of fade-out before changing quote
+        }, 5500); // Total time including fade (quote display for 5 seconds + fade duration)
+
+        return () => clearInterval(quoteInterval);
+    }, [quotes.length]);
 
     return (
         <div className="pt-[9vh]">
             <img src="/Header.jpg" className="object-fit absolute -z-20 w-full h-[60vh]" />
             <div className="md:h-[60vh] h-[40vh] w-full absolute z-[-1] bg-gradient-to-t from-black to-transparent"></div>
-            <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center align- z-10">
+            <div className="w-auto md:h-[40vh] flex flex-col justify-around items-center z-10">
                 <h1
-                    className={`md:text-5xl text-3xl font-medium text-white text-center font-sans  ${animate ? "opacity-100 scale-100" : "opacity-0 scale-125"
-                        }`}
+                    className={`md:text-5xl text-3xl font-medium text-white text-center font-sans ${
+                        animate ? "opacity-100 scale-100" : "opacity-0 scale-125"
+                    }`}
                     style={{
                         transition: "transform 1.5s ease-out, opacity 1.5s ease-out",
                         transformOrigin: "center",
@@ -32,27 +52,35 @@ const Header = () => {
                     <div className="mb-3 text-3xl font-semibold font-volkhov text-center">About us</div>
                     <p className="text-[0.8rem] leading-tight text-center">
                         At Sansthaein Aur Samvidhan, we aim to make learning about the Indian Constitution accessible, engaging, and fun for everyone, regardless of age or background. Our platform combines interactive games, easy-to-understand lessons, and exciting activities to foster a deeper understanding of India’s democratic framework and institutions.
-                        <div className="mt-2"><h1>Learn. Play. Empower.</h1></div>
+                        <div className="mt-2">
+                            <h1>Learn. Play. Empower.</h1>
+                        </div>
                     </p>
                 </div>
             </div>
             <div className="md:h-[60vh] md:w-full h-[40vh] overflow-hidden bg-white">
                 {/* Top Section */}
-                <div className="bg-blue-800 text-white text-center py-4 flex justify-around items-center gap-4" >
+                <div className="bg-blue-800 text-white text-center py-4 flex justify-around items-center gap-4">
                     <h1 className="text-xl md:text-xl font-volkhov">Legislature</h1>
                     <h1 className="text-xl md:text-xl font-volkhov">Executive</h1>
                     <h1 className="text-xl md:text-xl font-volkhov">Judiciary</h1>
                 </div>
                 {/* Middle Section */}
-                <img src="/central_vista3_banner_desktop_1920x1080.jpg" className="h-[40vh] w-full object-cover absolute" />
+                <img
+                    src="/central_vista3_banner_desktop_1920x1080.jpg"
+                    className="h-[40vh] w-full object-cover absolute"
+                />
                 {/* Bottom Section */}
                 <div className="flex h-[20vh] w-full justify-center items-center">
-                    <a id="learn"></a>
                     <div className="h-[10vh] w-[80vw] flex justify-center inset-y-0 top-[123vh] items-center bg-orange-500 rounded-xl z-10 text-center text-white text-xl absolute">
-                        <p>“Constitutional morality is not a natural sentiment. It has to be cultivated”</p>
-                        <p>-B.R. Ambedkar</p>
+                        <p
+                            className={`transition-opacity duration-500 ${
+                                fade ? "opacity-0" : "opacity-100"
+                            }`}
+                        >
+                            {quotes[currentQuoteIndex]}
+                        </p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -60,6 +88,9 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
 
 // const Header = () => {
 //     return (
