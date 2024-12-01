@@ -31,9 +31,13 @@ const Register = () => {
     }
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="flex justify-center items-center min-h-screen">
             <div className="w-full max-w-md h-full bg-white shadow-lg rounded-lg p-6">
-            <h2 className="text-2xl font-semibold text-center mb-6">Sign Up</h2>
+                {/* Background Image Layer */}
+                <div className="absolute inset-0 bg-[url('/login.jpg')] bg-cover bg-center opacity-40 blur-sm -z-10">
+                </div>
+                <div className="absolute inset-0 bg-orange-400 opacity-10 blur-md -z-10"></div>
+                <h2 className="text-2xl font-semibold text-center mb-6">Sign Up</h2>
                 <form onSubmit={registerUser} className="space-y-4">
                     <div>
                         <label className="block text-sm font-medium mb-1">Username</label>
