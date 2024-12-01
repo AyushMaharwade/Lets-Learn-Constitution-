@@ -89,7 +89,7 @@ const Legislative = () => {
           </div>
 
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
-            <h4 className="text-xl font-bold text-blue-900 mb-2">Article</h4>
+            <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Article</h4>
             <p className="text-gray-600 mb-4">
               Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
             </p>
@@ -99,7 +99,7 @@ const Legislative = () => {
           </div>
 
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
-            <h4 className="text-xl font-bold text-blue-900 mb-2">Article</h4>
+            <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Article</h4>
             <p className="text-gray-600 mb-4">
               Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
             </p>

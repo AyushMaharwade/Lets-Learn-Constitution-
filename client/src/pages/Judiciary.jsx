@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 const Judiciary = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="bg-gray-50 p-8 font-sans">
       {/* Header Section */}
@@ -13,75 +15,99 @@ const Judiciary = () => {
           <h1 className="text-sm font-semibold text-white bg-blue-900 inline-block px-2 py-1 rounded-md">
             Learn Constitution of India
           </h1>
-          <h2 className="text-5xl font-bold mt-4 text-gray-900">Judiciary</h2>
+          <h2 className="text-5xl font-volkhov mt-4 text-gray-900">Judiciary</h2>
         </div>
 
         {/* Right Section: Image */}
         <div className="mt-4 md:mt-0 mr-20">
           <img
-            src="/image 1.png" // Path to your image
-            alt="Executive Section"
+            src="/image 1.png" // Path to your new image
+            alt="Judiciary Section"
             className="w-full md:w-80 h-auto rounded-md"
           />
         </div>
       </div>
 
-
       {/* Main Content */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Introduction Section */}
         <div className="lg:col-span-2 bg-[#000C73] p-6 rounded shadow">
-          <h3 className="text-3xl font-bold text-white mb-4">Introduction</h3>
-          <p className="text-white">
-            <p className='p-2'>The Judiciary of India is the system of courts that interprets and applies the laws of the country. It plays an important role in ensuring that justice is served and people's rights are protected. The Judiciary is independent, meaning it works on its own without being influenced by the government or anyone else.</p> <p className='p-2'>At the top of the Judiciary is the Supreme Court, followed by High Courts in each state, and lower courts in different regions. The Judiciary helps solve disputes between individuals, organizations, and even the government. It also makes sure that the laws passed by the Legislature and the actions of the Executive are fair and follow the Constitution of India.</p> <p className='p-2'>The Judiciary is important because it helps maintain law and order, ensures justice is done, and protects the rights and freedoms of every citizen. Understanding how the Judiciary works helps us realize how important it is to keep things fair and equal for everyone.</p>
+          <h3 className="text-3xl font-volkhov font-bold text-white mb-4">Introduction</h3>
+          <p className="text-white p-2">
+            The Judiciary of India is the branch of the government responsible for interpreting laws, ensuring justice, and protecting citizens' rights. It operates independently, free from external influences.
+          </p>
+          <p className="text-white p-2">
+            The Judiciary consists of the Supreme Court, High Courts at the state level, and subordinate courts at the district and local levels. It resolves disputes, ensures laws align with the Constitution, and acts as a check on the Legislature and Executive branches.
+          </p>
+          <p className="text-white p-2">
+            By understanding the Judiciary's role, we recognize its importance in maintaining fairness, protecting freedoms, and upholding justice for all citizens.
           </p>
         </div>
 
         {/* More Resource Section */}
         <div>
           <h3 className="text-xl font-bold text-blue-900 mb-4">More Resource</h3>
-          <div className="bg-gray-200 h-24 rounded mb-4"></div>
-          <div className="bg-gray-200 h-24 rounded mb-4"></div>
-          <div className="bg-gray-200 h-24 rounded"></div>
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/L-5tyx1DiDs?si=Pk5PMHrA0KkZ1YPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/p0moBiWUUYM?si=xE2ymNmBkmj-Ixfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
 
       {/* More to Learn Section */}
       <div className="mt-12">
         <h3 className="text-xl font-bold text-blue-900 mb-4">More to Learn</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Placeholder Section */}
-          <div className="bg-gray-200 flex flex-col justify-center items-center h-24 rounded">
-            <div>
-              <Link to="/Legislative">
-                <button className="text-xl font-bold p-1 text-blue-900">
-                  Legislative
-                </button>
-              </Link>
-            </div>
-            <div>
-              <Link to="/Excecutive">
-                <button className="text-xl font-bold text-blue-900">
-                  Excecutive
-                </button>
-              </Link>
-            </div>
-          </div>
-
+        <div className="flex justify-evenly grid-cols-1 md:grid-cols-3 gap-8">
           {/* Article Section */}
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
-            <h4 className="text-xl font-bold text-blue-900 mb-2">Article VI</h4>
+            <h4 className="text-xl font-volkhov font-bold text-blue-900 mb-2">Wikipedia</h4>
             <p className="text-gray-600 mb-4">
-              Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
+              Dive into the workings of the Indian Judiciary on Wikipedia.
+            </p>
+            <button
+              onClick={() =>
+                window.open(
+                  'https://en.wikipedia.org/wiki/Judiciary_of_India',
+                  '_blank'
+                )
+              }
+              className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+            >
+              Read
+            </button>
+          </div>
+
+          <div className="md:col-span-2 bg-white p-6 rounded shadow">
+            <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Case Studies</h4>
+            <p className="text-gray-600 mb-4">
+              Read famous case studies that highlight the role of the Judiciary.
             </p>
             <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-              Read
+              Explore
+            </button>
+          </div>
+
+          <div className="md:col-span-2 bg-white p-6 rounded shadow">
+            <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Articles</h4>
+            <p className="text-gray-600 mb-4">
+              Discover detailed insights into India's judicial system.
+            </p>
+            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+              Learn More
             </button>
           </div>
         </div>
       </div>
-    </div>
-  )
-}
 
-export default Judiciary
+      {/* Navigation Button */}
+      <div className="w-full h-[10vh] flex justify-center items-center">
+        <Link to="/Legislative">
+          <button className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-orange-600">
+            Back to Legislative
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Judiciary;
