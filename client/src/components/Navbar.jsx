@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img className="h-12 m-2 px-3" src="/logo.png" alt="Logo" />
           <Link to="/">
-            <span className="self-center flex justify-center items-center whitespace-nowrap font-sans font-medium text-3xl text-white">
+            <span className="self-center flex justify-center items-center whitespace-nowrap font-volkhov font-medium text-3xl text-white">
               Constitution of India
             </span>
           </Link>

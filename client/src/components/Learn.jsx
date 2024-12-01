@@ -34,7 +34,7 @@ const Learn = () => {
       >
         <h1 className="text-white text-2xl">Learn</h1>
         <p className="text-white mb-8">
-          Unlock the knowledge of India's Constitution with engaging lessons and resources tailored for all.
+          Unlock the knowledge of India&apos;s Constitution with engaging lessons and resources tailored for all.
         </p>
         <div className="flex space-x-20">
           {/* Left Div */}
