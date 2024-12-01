@@ -34,21 +34,22 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div>
-          <ul className="hidden md:flex justify-between lg:w-[30vw] gap-[5px] text-white font-regular">
-            <Link to="/">
-              <li className="cursor-pointer">Home</li>
-            </Link>
-            <a href="#learn">
-              <li className="cursor-pointer">Learn</li>
-            </a>
-            <a href="#games">
-              <li className="cursor-pointer">Games</li>
-            </a>
-            <Link to="/News">
-              <li className="cursor-pointer">News</li>
-            </Link>
-          </ul>
-        </div>
+  <ul className="hidden md:flex justify-between lg:w-[30vw] gap-[5px] text-white font-regular">
+    <Link to="/">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">Home</li>
+    </Link>
+    <a href="#learn">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">Learn</li>
+    </a>
+    <a href="#games">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">Games</li>
+    </a>
+    <Link to="/News">
+      <li className="cursor-pointer hover:scale-110 transform transition-transform duration-300">News</li>
+    </Link>
+  </ul>
+</div>
+
 
         {/* User and Language Dropdown */}
         <div className="relative">
