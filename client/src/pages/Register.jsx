@@ -1,41 +1,46 @@
-import { useState } from "react"
-import axios from 'axios'
-import { toast } from 'react-hot-toast'
-import { useNavigate } from "react-router-dom"
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [data, setData] = useState({
-        name: '',
-        email: '',
-        password: '',
-    })
+        username: "",
+        email: "",
+        password: "",
+    });
 
     const registerUser = async (e) => {
         e.preventDefault();
-        const { name, email, password } = data
+        const { username, email, password } = data;
         try {
-            const { data } = await axios.post('./register', {
-                name, email, password
-            })
+            const { data } = await axios.post("./register", {
+                name: username, // Backend expects "name"
+                email,
+                password,
+            });
             if (data.error) {
-                toast.error(data.error)
+                toast.error(data.error);
             } else {
-                setData({})
-                toast.success('Login Successful.  Welcome!')
-                navigate('/login')
+                setData({
+                    username: "",
+                    email: "",
+                    password: "",
+                });
+                toast.success("Registration Successful. Welcome!");
+                navigate("/login");
             }
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
-    }
+    };
 
     return (
         <div className="flex justify-center items-center min-h-screen">
             <div className="w-full max-w-md h-full bg-white shadow-lg rounded-lg p-6">
                 {/* Background Image Layer */}
-                <div className="absolute inset-0 bg-[url('/login.jpg')] bg-cover bg-center opacity-40 blur-sm -z-10">
-                </div>
+                <div className="absolute inset-0 bg-[url('/login.jpg')] bg-cover bg-center opacity-40 blur-sm -z-10"></div>
                 <div className="absolute inset-0 bg-orange-400 opacity-10 blur-md -z-10"></div>
                 <h2 className="text-2xl font-semibold text-center mb-6">Sign Up</h2>
                 <form onSubmit={registerUser} className="space-y-4">
@@ -79,20 +84,13 @@ const Register = () => {
                     </div>
                 </form>
                 <p className="text-center mt-4 text-gray-600">
-                    <a
-                        href="/login"
-                        className="text-[#FB8500] hover:underline"
-                    >
+                    <a href="/login" className="text-[#FB8500] hover:underline">
                         Login
                     </a>
                 </p>
             </div>
         </div>
+    );
+};
 
-
-
-
-    )
-}
-
-export default Register
+export default Register;

@@ -50,12 +50,12 @@ const Header = () => {
             <div className="h-[30vh] w-auto flex justify-center items-center">
                 <div className="h-[25vh] w-[50vw] bg-gradient-to-r from-[#FB8500] to-[#FB8500] text-white p-4 rounded-md">
                     <div className="mb-3 text-3xl font-semibold font-volkhov text-center">About us</div>
-                    <p className="text-[0.8rem] leading-tight text-center">
-                        At Sansthaein Aur Samvidhan, we aim to make learning about the Indian Constitution accessible, engaging, and fun for everyone, regardless of age or background. Our platform combines interactive games, easy-to-understand lessons, and exciting activities to foster a deeper understanding of India’s democratic framework and institutions.
+                    <div className="text-[0.8rem] leading-tight text-center">
+                        At Sansthaein Aur Samvidhan, we aim to make learning about the Indian Constitution accessible, engaging, and fun for everyone, regardless of age or background. Our platform combines interactive games, easy-to-understand lessons, and exciting activities to foster a deeper understanding of India,s democratic framework and institutions.
                         <div className="mt-2">
-                            <h1>Learn. Play. Empower.</h1>
+                            <p>Learn. Play. Empower.</p>
                         </div>
-                    </p>
+                    </div>
                 </div>
             </div>
             <div className="md:h-[60vh] md:w-full h-[40vh] overflow-hidden bg-white">
@@ -79,6 +79,7 @@ const Header = () => {
                             }`}
                         >
                             {quotes[currentQuoteIndex]}
+                            <a id="learn"></a>
                         </p>
                     </div>
                 </div>
