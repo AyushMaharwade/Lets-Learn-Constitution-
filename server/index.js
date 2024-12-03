@@ -2,6 +2,7 @@ const express =  require('express')
 const dotenv = require('dotenv').config()
 const cors = require('cors')
 const mongoose = require('mongoose')
+const cookieParser = require('cookie-parser')
 const app = express();
 const port = 3000;
 
@@ -11,7 +12,9 @@ mongoose.connect(process.env.MONGO_URL,{
 .catch(() => console.log('database not connected',err))
 
 // middelware
-app.use(express.json())
+app.use(express.json());
+app.use(cookieParser());
+app.use(express.urlencoded({extended: false}))
 
 app.use(cors({
     origin: 'http://localhost:5173',  // Allow only your frontend origin

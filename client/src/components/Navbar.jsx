@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useContext } from "react"
+import {UserContext} from "../../context/userContext"
 
 const Navbar = () => {
+  const {user} = useContext(UserContext)
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
@@ -64,7 +67,7 @@ const Navbar = () => {
               className="w-8 h-8 rounded-full mr-2"
               style={{ filter: "invert(100%) grayscale(100%) brightness(200%)" }}
             />
-            <span className="hidden md:block">John Doe</span>
+            <span className="hidden md:block">{!!user && (<h2>{user.name}</h2>)}</span>
           </button>
 
           {/* User Dropdown */}

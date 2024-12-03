@@ -1,7 +1,14 @@
+import { useContext } from "react"
+import {UserContext} from "../../context/userContext"
 
 const Dashboard = () => {
+  const {user} = useContext(UserContext)
   return (
-    <div>Dashboard</div>
+    <div>
+      <h1>DashBoard</h1>
+      {!!user && (<h2> hi {user.name}</h2>)}
+      
+    </div>
   )
 }
 

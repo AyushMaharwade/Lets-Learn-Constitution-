@@ -16,6 +16,7 @@ import Profile from './pages/Profile'
 import axios from 'axios';
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
+import { UserContextProvider } from '../context/userContext'
 
 axios.defaults.baseURL = 'http://localhost:3000';
 axios.defaults.withCredentials = true;
@@ -23,7 +24,7 @@ axios.defaults.withCredentials = true;
 function App() {
 
   return (
-    <>
+    <UserContextProvider>
     <Navbar />
     <Toaster position='bottom-rigth' toastOptions={{duration: 2000}} />
     <Routes>
@@ -52,7 +53,7 @@ function App() {
       <Route path='profile' element={<Profile />} />
     </Routes>
     <Footer/>
-    </>
+    </UserContextProvider>
   )
 }
 
