@@ -74,12 +74,12 @@ const Navbar = () => {
           {isUserDropdownOpen && (
             <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg z-10">
               <div className="border-b border-gray-200 px-4 py-2">
-                <a
+                {/* <a
                   href="/profile"
                   className="block text-gray-700 hover:bg-gray-100 px-2 py-1 rounded-md"
                 >
                   My Profile
-                </a>
+                </a> */}
                 <a
                   href="/login"
                   className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
