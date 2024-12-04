@@ -27,7 +27,7 @@ const Games = () => {
   }, []);
 
   return (
-    <div className="pt-20 pb-5 flex items-center justify-center">
+    <div className="pt-15 pb-10 flex items-center justify-center">
       <a id="games"></a>
       <div
         ref={containerRef}
