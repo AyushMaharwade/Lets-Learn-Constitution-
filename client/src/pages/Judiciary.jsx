@@ -47,9 +47,9 @@ const Judiciary = () => {
         {/* More Resource Section */}
         <div>
           <h3 className="text-xl font-bold text-blue-900 mb-4">More Resource</h3>
-          <iframe width="350" height="200" src="https://www.youtube.com/embed/L-5tyx1DiDs?si=Pk5PMHrA0KkZ1YPu" title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/L-5tyx1DiDs?si=Pk5PMHrA0KkZ1YPu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" ></iframe>
 
-          <iframe width="350" height="200" src="https://www.youtube.com/embed/p0moBiWUUYM?si=xE2ymNmBkmj-Ixfs" title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/p0moBiWUUYM?si=xE2ymNmBkmj-Ixfs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" ></iframe>
         </div>
       </div>
 
@@ -91,14 +91,14 @@ const Judiciary = () => {
             <p className="text-gray-600 mb-4">
               Discover detailed insights into India&apos;s judicial system.
             </p>
-            <button   onClick={() =>
-                window.open(
-                  'https://www.constitutionofindia.net/parts/chapter-iv-the-union-judiciary/',
-                  '_blank'
-                )
-              }
-             className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-           
+            <button onClick={() =>
+              window.open(
+                'https://www.constitutionofindia.net/parts/chapter-iv-the-union-judiciary/',
+                '_blank'
+              )
+            }
+              className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+
               Learn More
             </button>
           </div>
