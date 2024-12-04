@@ -195,12 +195,12 @@ const Navbar = () => {
                 >
                   Sign Up
                 </a>
-                <a
+                {/* <a
                   href="/"
                   className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
                 >
                   Log Out
-                </a>
+                </a> */}
               </div>
             </div>
           )}
