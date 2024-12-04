@@ -2,7 +2,7 @@
 const Snakegame = () => {
 
   return (
-    <div><iframe
+    <div className="my-[5vh]"><iframe
     src="https://snakegdjsdgh.netlify.app/" 
     style={{
       width: '100vw', 

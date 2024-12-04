@@ -143,7 +143,7 @@ const Navbar = () => {
                     Snake & Ladder
                   </button>
                   </Link>
-                  <Link to="/Judiciary">
+                  <Link to="/flip-card-game">
                   <button
                     className="block px-4 py-2 hover:bg-gray-100 rounded-md"
                   >
