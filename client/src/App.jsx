@@ -16,6 +16,8 @@ import Profile from './pages/Profile'
 import axios from 'axios';
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
+// import FeedbackForm from './pages/FeedbackForm'
+
 import { UserContextProvider } from '../context/userContext'
 
 axios.defaults.baseURL = 'http://localhost:3000';
@@ -51,6 +53,9 @@ function App() {
       <Route path='flip-card-game' element={<Flipcardgame />} />
 
       <Route path='profile' element={<Profile />} />
+
+      {/* <Route path='feedback' element={<FeedbackForm />} /> */}
+       
     </Routes>
     <Footer/>
     </UserContextProvider>

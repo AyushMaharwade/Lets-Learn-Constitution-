@@ -22,9 +22,6 @@ const Footer = () => {
         <button className="bg-blue-800 hover:bg-blue-900 text-white py-2 px-4 rounded">
           About Us
         </button>
-        <button className="bg-blue-800 hover:bg-blue-900 text-white py-2 px-4 rounded">
-          Feedback
-        </button>
       </div>
     </footer>
   );
