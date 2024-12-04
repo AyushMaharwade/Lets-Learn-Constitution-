@@ -81,19 +81,25 @@ const Legislative = () => {
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
             <h4 className="text-xl font-volkhov font-bold text-blue-900 mb-2">Wikipedia</h4>
             <p className="text-gray-600 mb-4">
-              Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
+              Dive into the workings of the Indian Judiciary on Wikipedia.
             </p>
-            <button onClick={() => window.open("https://en.wikipedia.org/wiki/Legislature", "_blank")} className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <Link to="/Wikipedia"> <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Read
             </button>
+            </Link>
           </div>
 
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
             <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Article</h4>
             <p className="text-gray-600 mb-4">
-              Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
+            Discover detailed insights into India's legislative system
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <button onClick={() =>
+                window.open(
+                  'https://mpa.gov.in/',
+                  '_blank'
+                )
+              } className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Read
             </button>
           </div>

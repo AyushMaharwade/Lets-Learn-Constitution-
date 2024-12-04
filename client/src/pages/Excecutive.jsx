@@ -66,17 +66,13 @@ const Executive = () => {
             <p className="text-gray-600 mb-4">
               Explore the Indian Executive and its responsibilities on Wikipedia.
             </p>
+            <Link to="/Wikipedia2">
             <button
-              onClick={() =>
-                window.open(
-                  'https://en.wikipedia.org/wiki/Executive_(government)',
-                  '_blank'
-                )
-              }
               className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
             >
               Read
             </button>
+            </Link>
           </div>
 
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
@@ -84,7 +80,12 @@ const Executive = () => {
             <p className="text-gray-600 mb-4">
               Learn more about how the Executive functions and its roles in the government.
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <button onClick={()=>
+              window.open(
+                'https://knowindia.india.gov.in/profile/the-union/executive.php',
+                '_blank'
+              )
+            } className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Read
             </button>
           </div>
