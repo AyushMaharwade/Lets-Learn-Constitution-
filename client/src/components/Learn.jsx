@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -28,6 +22,7 @@ const Learn = () => {
 
     return () => {
       if (containerRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(containerRef.current);
       }
     };

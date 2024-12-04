@@ -128,26 +128,26 @@ const Navbar = () => {
             >
               Games
               {isGamesDropdownOpen && (
-                <div className="absolute top-full mt-2 bg-white text-gray-700 rounded-md shadow-lg z-10">
+                <div className="absolute top-full mt-2 bg-white text-gray-700 rounded-md shadow-lg z-10 w-max">
                    <Link to="/Quizgame">
                   <button
                     className="block px-4 py-2 text-center hover:bg-gray-100 rounded-md"
                   >
-                    Quiz
+                    Quiz Game
                   </button>
                   </Link>
-                  <Link to="/excecutive">
+                  <Link to="/Snakegame">
                   <button
                     className="block px-4 py-2 text-center hover:bg-gray-100 "
                   >
-                    Executive
+                    Snake & Ladder
                   </button>
                   </Link>
-                  <Link to="/Judiciary">
+                  <Link to="/flip-card-game">
                   <button
                     className="block px-4 py-2 hover:bg-gray-100 rounded-md"
                   >
-                    Judiciary
+                    Spin the Wheel
                   </button>
                   </Link>
                 </div>
@@ -195,12 +195,12 @@ const Navbar = () => {
                 >
                   Sign Up
                 </a>
-                <a
+                {/* <a
                   href="/"
                   className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
                 >
                   Log Out
-                </a>
+                </a> */}
               </div>
             </div>
           )}

@@ -34,7 +34,7 @@ const VoiceflowChat = () => {
 
     // Call the function to load the chat widget script
     loadVoiceflowChat();
-  }, []); // Empty dependency array ensures this runs once
+  }, []);
 
   return (
     <div>

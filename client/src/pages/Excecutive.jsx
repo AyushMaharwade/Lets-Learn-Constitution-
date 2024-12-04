@@ -40,19 +40,19 @@ const Executive = () => {
             The President serves as the ceremonial head of the state, while the Prime Minister leads the government, supported by the Council of Ministers. Together, they ensure that the laws passed by the Legislature are executed effectively.
           </p>
           <p className="text-white p-2">
-            The Executive plays a critical role in managing the country's affairs, addressing key issues such as education, healthcare, and the economy. It works towards making policies and ensuring their proper implementation to meet the needs of the citizens.
+            The Executive plays a critical role in managing the country&apos;s affairs, addressing key issues such as education, healthcare, and the economy. It works towards making policies and ensuring their proper implementation to meet the needs of the citizens.
           </p>
           <p className="text-white p-2">
-            Understanding the Executive's functions gives us insight into how the government operates and serves the people of India.
+            Understanding the Executive&apos;s functions gives us insight into how the government operates and serves the people of India.
           </p>
         </div>
 
         {/* More Resource Section */}
         <div className="flex-column">
           <h3 className="text-xl font-bold text-blue-900 mb-4">More Resource</h3>
-          <iframe width="350" height="200" src="https://www.youtube.com/embed/70YB6dlWQVI?si=QpOViRzCAorX56ip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/70YB6dlWQVI?si=QpOViRzCAorX56ip" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
 
-          <iframe width="350" height="200" src="https://www.youtube.com/embed/V8hf7bC4Yf0?si=tq-LmCcmLW0ihcyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="350" height="200" src="https://www.youtube.com/embed/V8hf7bC4Yf0?si=tq-LmCcmLW0ihcyA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const Executive = () => {
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
             <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Article</h4>
             <p className="text-gray-600 mb-4">
-              Discover detailed insights into the Indian Executive's governance.
+              Discover detailed insights into the Indian Executive&apos;s governance.
             </p>
             <button onClick={()=>
               window.open(
