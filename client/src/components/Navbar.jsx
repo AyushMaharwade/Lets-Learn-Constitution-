@@ -211,7 +211,7 @@ const Navbar = () => {
                 e.stopPropagation();
                 toggleLanguageDropdown();
               }}
-              className="block w-full text-left text-gray-700 hover:bg-gray-100 px-2 py-1 rounded-md"
+              className="block w-full text-left text-gray-700 "
             >
               <img
               src="/Language.svg"
@@ -225,13 +225,13 @@ const Navbar = () => {
               <div className="absolute right-0 mt-2 bg-gray-100 rounded-md shadow-inner z-10">
                 <button
                   onClick={() => changeLanguage("en")}
-                  className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1 active:bg-[#F28D3F]"
+                  className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1 active:bg-[#F28D3F] rounded-md"
                 >
                   English
                 </button>
                 <button
                   onClick={() => changeLanguage("hi")}
-                  className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1 active:bg-[#F28D3F]"
+                  className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1 active:bg-[#F28D3F] rounded-md"
                 >
                   Hindi
                 </button>
