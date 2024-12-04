@@ -91,7 +91,14 @@ const Judiciary = () => {
             <p className="text-gray-600 mb-4">
               Discover detailed insights into India&apos;s judicial system.
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <button   onClick={() =>
+                window.open(
+                  'https://www.constitutionofindia.net/parts/chapter-iv-the-union-judiciary/',
+                  '_blank'
+                )
+              }
+             className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+           
               Learn More
             </button>
           </div>

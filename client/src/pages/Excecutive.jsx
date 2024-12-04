@@ -94,7 +94,13 @@ const Executive = () => {
             <p className="text-gray-600 mb-4">
               Discover detailed insights into the Indian Executive's governance.
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <button onClick={()=>
+              window.open(
+                'https://www.constitutionofindia.net/articles/article-168-constitution-of-legislatures-in-states/',
+                '_blank'
+              )
+            }
+            className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Read
             </button>
           </div>

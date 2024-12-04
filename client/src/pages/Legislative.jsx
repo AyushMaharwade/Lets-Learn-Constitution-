@@ -79,7 +79,7 @@ const Legislative = () => {
 
           {/* Article Section */}
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
-            <h4 className="text-xl font-volkhov font-bold text-blue-900 mb-2">Wekipedia</h4>
+            <h4 className="text-xl font-volkhov font-bold text-blue-900 mb-2">Wikipedia</h4>
             <p className="text-gray-600 mb-4">
               Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
             </p>
@@ -101,9 +101,15 @@ const Legislative = () => {
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
             <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Article</h4>
             <p className="text-gray-600 mb-4">
-              Lorem jjahfd sdfi dfisdf bsdi dsifkkdb djbfjbdjf...
+            Discover detailed insights into the Indian Executive's governance.
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <button  onClick={() =>
+                window.open(
+                  'https://www.constitutionofindia.net/articles/article-168-constitution-of-legislatures-in-states/',
+                  '_blank'
+                )
+              }
+             className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Read
             </button>
           </div>
