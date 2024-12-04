@@ -17,9 +17,14 @@ const Navbar = () => {
     setIsLanguageDropdownOpen((prev) => !prev);
   };
 
-  const handleLanguageChange = (lang) => {
-    alert(`Language changed to: ${lang}`);
-    setIsLanguageDropdownOpen(false); // Close language dropdown after selection
+  // const handleLanguageChange = (lang) => {
+  //   alert(`Language changed to: ${lang}`);
+  //   setIsLanguageDropdownOpen(false); // Close language dropdown after selection
+  // };
+
+  const changeLanguage = (lang) => {
+    // eslint-disable-next-line no-undef
+    Weglot.switchTo(lang);
   };
 
   return (
@@ -113,14 +118,14 @@ const Navbar = () => {
                 {isLanguageDropdownOpen && (
                   <div className="mt-2 bg-gray-100 rounded-md shadow-inner">
                     <button
-                      onClick={() => handleLanguageChange("English")}
-                      className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1"
+                      onClick={() => changeLanguage("en")}
+                      className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1 active:bg-[#F28D3F]"
                     >
                       English
                     </button>
                     <button
-                      onClick={() => handleLanguageChange("HIndi")}
-                      className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1"
+                      onClick={() => changeLanguage("hi")}
+                      className="block w-full text-left text-gray-700 hover:bg-gray-200 px-4 py-1 active:bg-[#F28D3F]"
                     >
                       Hindi
                     </button>

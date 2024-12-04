@@ -67,7 +67,7 @@ const Games = () => {
               alt="Background"
               className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-all duration-500 cursor-pointer"
             />
-            <Link to="/QuizGame">
+            <Link to="/Snakegame">
               <button className="bg-orange-500 text-white py-2 px-4 rounded z-10 relative">
                 Play
               </button>
