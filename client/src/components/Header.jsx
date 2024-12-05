@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// State Initialization
 const Header = () => {
     const [animate, setAnimate] = useState(false);
     const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);

@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 
 const Wikipedia = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
     return (
       <div><iframe
       src="https://en.wikipedia.org/wiki/Legislature" 
