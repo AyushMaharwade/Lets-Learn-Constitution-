@@ -2,11 +2,11 @@
 const News = () => {
   return (
     <div><iframe
-    src="https://country-informer-using-api.vercel.app/" // Replace with the deployed URL
+    src="https://newsconstituion.netlify.app/" 
     style={{
       width: '100%', // Set to desired width (e.g., '600px' or '100%')
       height: '100vh', // Set to desired height (e.g., '400px' or '100vh')
-      border: 'none', // Optional: Remove iframe border
+      border: 'none',
     }}
     title="Embedded React App"
   />
