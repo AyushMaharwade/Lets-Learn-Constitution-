@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { UserContext } from "../../context/userContext";
 
+// manage Dropdown states 
 const Navbar = () => {
   const { user } = useContext(UserContext);
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
@@ -9,9 +10,10 @@ const Navbar = () => {
   const [isLearnDropdownOpen, setIsLearnDropdownOpen] = useState(false);
   const [isGamesDropdownOpen, setIsGamesDropdownOpen] = useState(false);
 
+   // User dropdown toggle 
   const toggleUserDropdown = () => {
     setIsUserDropdownOpen((prev) => !prev);
-    closeOtherDropdowns("user");
+    closeOtherDropdowns("user"); // to close other dropdowns 
   };
 
   const toggleLanguageDropdown = () => {
@@ -29,6 +31,7 @@ const Navbar = () => {
     closeOtherDropdowns("games");
   };
 
+// to ensure that only one dropdown is close
   const closeOtherDropdowns = (currentDropdown) => {
     if (currentDropdown !== "user") setIsUserDropdownOpen(false);
     if (currentDropdown !== "language") setIsLanguageDropdownOpen(false);
@@ -50,6 +53,7 @@ const Navbar = () => {
 
     document.addEventListener("click", handleOutsideClick);
 
+    // reset the event listener
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
@@ -64,7 +68,7 @@ const Navbar = () => {
   return (
     <nav
       className="top-0 left-0 w-full px-4 py-3 lg:px-7 lg:py-0 lg:h-[9vh] bg-[#F28D3F] z-50 fixed"
-      onClick={(e) => e.stopPropagation()} // Prevent propagation to the document listener
+      onClick={(e) => e.stopPropagation()} // event listener, doesnt close automatically
     >
       <div className="flex flex-wrap lg:justify-between items-center mx-auto max-w-screen-xl font-Inter justify-center gap-3 lg:h-[9vh]">
         {/* Logo Section */}
@@ -96,25 +100,25 @@ const Navbar = () => {
               {isLearnDropdownOpen && (
                 <div className="absolute top-full mt-2 bg-white text-gray-700 rounded-md shadow-lg z-10">
                   <Link to="/legislative">
-                  <button
-                    className="block px-4 py-2 hover:bg-gray-100 rounded-md"
-                  >
-                    Legistature
-                  </button>
+                    <button
+                      className="block px-4 py-2 hover:bg-gray-100 rounded-md"
+                    >
+                      Legistature
+                    </button>
                   </Link>
                   <Link to="/excecutive">
-                  <button
-                    className="block px-4 py-2 hover:bg-gray-100"
-                  >
-                    Executive
-                  </button>
+                    <button
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Executive
+                    </button>
                   </Link>
                   <Link to="/Judiciary">
-                  <button
-                    className="block px-4 py-2 hover:bg-gray-100 rounded-md"
-                  >
-                    Judiciary
-                  </button>
+                    <button
+                      className="block px-4 py-2 hover:bg-gray-100 rounded-md"
+                    >
+                      Judiciary
+                    </button>
                   </Link>
                 </div>
               )}
@@ -129,26 +133,26 @@ const Navbar = () => {
               Games
               {isGamesDropdownOpen && (
                 <div className="absolute top-full mt-2 bg-white text-gray-700 rounded-md shadow-lg z-10 w-max">
-                   <Link to="/Quizgame">
-                  <button
-                    className="block px-4 py-2 text-center hover:bg-gray-100 rounded-md"
-                  >
-                    Quiz Game
-                  </button>
+                  <Link to="/Quizgame">
+                    <button
+                      className="block px-4 py-2 text-center hover:bg-gray-100 rounded-md"
+                    >
+                      Quiz Game
+                    </button>
                   </Link>
                   <Link to="/Snakegame">
-                  <button
-                    className="block px-4 py-2 text-center hover:bg-gray-100 "
-                  >
-                    Snake & Ladder
-                  </button>
+                    <button
+                      className="block px-4 py-2 text-center hover:bg-gray-100 "
+                    >
+                      Snake & Ladder
+                    </button>
                   </Link>
                   <Link to="/flip-card-game">
-                  <button
-                    className="block px-4 py-2 hover:bg-gray-100 rounded-md"
-                  >
-                    Spin the Wheel
-                  </button>
+                    <button
+                      className="block px-4 py-2 hover:bg-gray-100 rounded-md"
+                    >
+                      Spin the Wheel
+                    </button>
                   </Link>
                 </div>
               )}
@@ -163,49 +167,49 @@ const Navbar = () => {
 
         {/* User and Language Dropdown */}
         <div className="flex w-max justify-center items-center gap-3">
-        <div className="relative">
-          <button
-            className="flex items-center text-white focus:outline-none"
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleUserDropdown();
-            }}
-          >
-            <img
-              src="/user.png"
-              alt="Profile"
-              className="w-8 h-8 rounded-full mr-2"
-              style={{ filter: "invert(100%) grayscale(100%) brightness(200%)" }}
-            />
-            <span className="hidden md:block">{user ? user.name : "Guest"}</span>
-          </button>
+          <div className="relative">
+            <button
+              className="flex items-center text-white focus:outline-none"
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleUserDropdown();
+              }}
+            >
+              <img
+                src="/user.png"
+                alt="Profile"
+                className="w-8 h-8 rounded-full mr-2"
+                style={{ filter: "invert(100%) grayscale(100%) brightness(200%)" }}
+              />
+              <span className="hidden md:block">{user ? user.name : "Guest"}</span>
+            </button>
 
-          {isUserDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg z-10">
-              <div className="border-b border-gray-200 px-4 py-2">
-                <a
-                  href="/login"
-                  className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
-                >
-                  Login
-                </a>
-                <a
-                  href="/register"
-                  className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
-                >
-                  Sign Up
-                </a>
-                {/* <a
+            {isUserDropdownOpen && (
+              <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg z-10">
+                <div className="border-b border-gray-200 px-4 py-2">
+                  <a
+                    href="/login"
+                    className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
+                  >
+                    Login
+                  </a>
+                  <a
+                    href="/register"
+                    className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
+                  >
+                    Sign Up
+                  </a>
+                  {/* <a
                   href="/"
                   className="block text-gray-700 hover:bg-gray-100 px-2 py-1"
                 >
                   Log Out
                 </a> */}
+                </div>
               </div>
-            </div>
-          )}
-        </div>
-                  <div className="px-4 py-2 relative">
+            )}
+          </div>
+          <div className="px-4 py-2 relative">
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -214,13 +218,13 @@ const Navbar = () => {
               className="block w-full text-left text-gray-700 "
             >
               <img
-              src="/Language.svg"
-              alt="Profile"
-              className="w-8 h-8 rounded-full mr-2"
-              style={{ filter: "invert(100%) grayscale(100%) brightness(200%)" }}
-            />
+                src="/Language.svg"
+                alt="Profile"
+                className="w-8 h-8 rounded-full mr-2"
+                style={{ filter: "invert(100%) grayscale(100%) brightness(200%)" }}
+              />
             </button>
-            
+
             {isLanguageDropdownOpen && (
               <div className="absolute right-0 mt-2 bg-gray-100 rounded-md shadow-inner z-10">
                 <button
@@ -238,7 +242,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          </div>
+        </div>
       </div>
     </nav>
   );

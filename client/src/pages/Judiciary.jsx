@@ -21,7 +21,7 @@ const Judiciary = () => {
         {/* Right Section: Image */}
         <div className="mt-4 md:mt-0 mr-20">
           <img
-            src="/image 1.png" // Path to your new image
+            src="/image 1.png" 
             alt="Judiciary Section"
             className="w-full md:w-80 h-auto rounded-md"
           />

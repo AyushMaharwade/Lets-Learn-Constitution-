@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
+// State Initialization
 const Header = () => {
     const [animate, setAnimate] = useState(false);
     const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
     const [fade, setFade] = useState(false);
-    const [carouselIndex, setCarouselIndex] = useState(0); // Lifted state for the carousel
+    const [carouselIndex, setCarouselIndex] = useState(0); 
 
     const quotes = [
         "Constitutional morality is not a natural sentiment. It has to be cultivated. - B.R. Ambedkar",
@@ -46,7 +47,7 @@ const Header = () => {
     ];
 
     const nextSlide = () => {
-        setCarouselIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setCarouselIndex((prevIndex) => (prevIndex + 1) % images.length); // % reset the image index to zero
     };
 
     const prevSlide = () => {
