@@ -92,11 +92,11 @@ const Legislative = () => {
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
             <h4 className="text-xl font-bold font-volkhov text-blue-900 mb-2">Article</h4>
             <p className="text-gray-600 mb-4">
-            Discover detailed insights into India's legislative system
+            Discover detailed insights into India&apos;s legislative system
             </p>
             <button onClick={() =>
                 window.open(
-                  'https://mpa.gov.in/',
+                  'https://www.eci.gov.in/general-election-to-state-legislative-assembly',
                   '_blank'
                 )
               } className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
