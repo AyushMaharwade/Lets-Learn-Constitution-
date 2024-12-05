@@ -16,7 +16,9 @@ import Profile from './pages/Profile'
 import axios from 'axios';
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
-// import FeedbackForm from './pages/FeedbackForm'
+import Wikipedia from './Links/Wikipedia'
+import Wikipedia2 from './Links/Wikipedia2'
+import Wikipedia3 from './Links/Wikipedia3'
 
 import { UserContextProvider } from '../context/userContext'
 
@@ -54,7 +56,11 @@ function App() {
 
       <Route path='profile' element={<Profile />} />
 
-      {/* <Route path='feedback' element={<FeedbackForm />} /> */}
+      <Route path='Wikipedia' element={<Wikipedia />} />
+
+      <Route path='Wikipedia2' element={<Wikipedia2 />} />
+      
+      <Route path='Wikipedia3' element={<Wikipedia3 />} />
        
     </Routes>
     <Footer/>

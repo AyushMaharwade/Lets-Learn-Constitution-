@@ -63,17 +63,13 @@ const Judiciary = () => {
             <p className="text-gray-600 mb-4">
               Dive into the workings of the Indian Judiciary on Wikipedia.
             </p>
+            <Link to="/Wikipedia3">
             <button
-              onClick={() =>
-                window.open(
-                  'https://en.wikipedia.org/wiki/Judiciary_of_India',
-                  '_blank'
-                )
-              }
               className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
             >
               Read
             </button>
+            </Link>
           </div>
 
           <div className="md:col-span-2 bg-white p-6 rounded shadow">
@@ -81,7 +77,14 @@ const Judiciary = () => {
             <p className="text-gray-600 mb-4">
               Read famous case studies that highlight the role of the Judiciary.
             </p>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <button
+            onClick={() =>
+              window.open(
+                'https://www.sci.gov.in/',
+                '_blank'
+              )
+            } 
+            className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Explore
             </button>
           </div>
