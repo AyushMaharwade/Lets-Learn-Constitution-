@@ -13,4 +13,4 @@ const Flipcardgame = () => {
   )
 }
 
-export default Flipcardgame
+export default Flipcardgame 
