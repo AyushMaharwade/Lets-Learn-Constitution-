@@ -133,13 +133,13 @@ const Navbar = () => {
               Games
               {isGamesDropdownOpen && (
                 <div className="absolute top-full mt-2 bg-white text-gray-700 rounded-md shadow-lg z-10 w-max">
-                  <Link to="/Quizgame">
+                  {/* <Link to="/Quizgame">
                     <button
                       className="block px-4 py-2 text-center hover:bg-gray-100 rounded-md"
                     >
                       Quiz Game
                     </button>
-                  </Link>
+                  </Link> */}
                   <Link to="/Snakegame">
                     <button
                       className="block px-4 py-2 text-center hover:bg-gray-100 "

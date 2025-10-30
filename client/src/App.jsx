@@ -9,7 +9,6 @@ import Dashboard from './pages/Dashboard'
 import Excecutive from './pages/Excecutive'
 import Legislative from './pages/Legislative'
 import Judiciciary from './pages/Judiciary'
-// import QuizGame from './pages/QuizGame'
 import Snakegame from './pages/Snakegame'
 import Flipcardgame from './pages/Flipcardgame'
 import Profile from './pages/Profile'
@@ -47,8 +46,6 @@ function App() {
       <Route path='Judiciary' element={<Judiciciary />} />
 
       <Route path="/News" element={<News />} />
-
-      {/* <Route path="/Quizgame" element={<QuizGame />} /> */}
 
       <Route path='/Snakegame' element={<Snakegame />} />
 
